@@ -1,0 +1,32 @@
+
+curl -sfL https://get.rke2.io | sudo INSTALL_RKE2_CHANNEL=stable INSTALL_RKE2_VERSION=v1.27.9+rke2r1 sh -
+
+
+RKE2 Scripts:
+root@ubuntu-test-node-1:~# ls -al /usr/local/bin/
+total 86552
+drwxr-xr-x  2 root root     4096 Dec 26 23:24 .
+drwxr-xr-x 10 root root     4096 Feb 28 18:36 ..
+-rwxr-xr-x  1 root root 88611208 Dec 26 23:24 rke2
+-rwxr-xr-x  1 root root     3299 Dec 26 23:12 rke2-killall.sh
+-rwxr-xr-x  1 root root     4096 Dec 26 23:12 rke2-uninstall.sh
+
+Systemd Service Files:
+need to be created: /systemd/system/
+root@ubuntu-test-node-1:~# ls -al /usr/local/lib/systemd/system/
+total 24
+drwxr-xr-x 2 root root 4096 Dec 26 23:12 .
+drwxr-xr-x 3 root root 4096 Dec 26 23:12 ..
+-rw-r--r-- 1 root root   11 Dec 26 23:12 rke2-agent.env
+-rw-r--r-- 1 root root  870 Dec 26 23:12 rke2-agent.service
+-rw-r--r-- 1 root root   11 Dec 26 23:12 rke2-server.env
+-rw-r--r-- 1 root root  871 Dec 26 23:12 rke2-server.service
+
+CIS Sysctl Files:
+drwxr-xr-x  2 root root 4096 Dec 26 23:12 rke2
+root@ubuntu-test-node-1:~# ls -al /usr/local/share/rke2/
+total 24
+drwxr-xr-x 2 root root  4096 Dec 26 23:12 .
+drwxr-xr-x 6 root root  4096 Dec 26 23:12 ..
+-rw-r--r-- 1 root root 10174 Dec 26 23:24 LICENSE.txt
+-rw-r--r-- 1 root root    80 Dec 26 23:12 rke2-cis-sysctl.conf
