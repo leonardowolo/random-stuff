@@ -9,10 +9,10 @@ drwxr-xr-x  2 root root     4096 Dec 26 23:24 .
 drwxr-xr-x 10 root root     4096 Feb 28 18:36 ..
 -rwxr-xr-x  1 root root 88611208 Dec 26 23:24 rke2
 -rwxr-xr-x  1 root root     3299 Dec 26 23:12 rke2-killall.sh
--rwxr-xr-x  1 root root     4096 Dec 26 23:12 rke2-uninstall.sh
+-rwxr-xr-x  1 root root     4096 Dec 26 23:12 rke2-uninstall.sh (0755 / 755)
 
 Systemd Service Files:
-need to be created: /systemd/system/
+need to be created: /systemd/system/ (systemd 0755 / 755) (system 0755 / 755)
 root@ubuntu-test-node-1:~# ls -al /usr/local/lib/systemd/system/
 total 24
 drwxr-xr-x 2 root root 4096 Dec 26 23:12 .
@@ -20,7 +20,7 @@ drwxr-xr-x 3 root root 4096 Dec 26 23:12 ..
 -rw-r--r-- 1 root root   11 Dec 26 23:12 rke2-agent.env
 -rw-r--r-- 1 root root  870 Dec 26 23:12 rke2-agent.service
 -rw-r--r-- 1 root root   11 Dec 26 23:12 rke2-server.env
--rw-r--r-- 1 root root  871 Dec 26 23:12 rke2-server.service
+-rw-r--r-- 1 root root  871 Dec 26 23:12 rke2-server.service (0644 / 644)
 
 CIS Sysctl Files:
 drwxr-xr-x  2 root root 4096 Dec 26 23:12 rke2
@@ -29,4 +29,4 @@ total 24
 drwxr-xr-x 2 root root  4096 Dec 26 23:12 .
 drwxr-xr-x 6 root root  4096 Dec 26 23:12 ..
 -rw-r--r-- 1 root root 10174 Dec 26 23:24 LICENSE.txt
--rw-r--r-- 1 root root    80 Dec 26 23:12 rke2-cis-sysctl.conf
+-rw-r--r-- 1 root root    80 Dec 26 23:12 rke2-cis-sysctl.conf (0644 / 644)
